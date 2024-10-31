@@ -48,3 +48,31 @@ h1 {
 .video-item a:hover {
     color: #007BFF; /* Cor ao passar o mouse */
 }
+
+/* Estilos para o tema escuro */
+.dark-theme {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.dark-theme h1,
+.dark-theme button {
+    color: #f4f4f4;
+}
+
+.dark-theme .video-item {
+    background: #444;
+    color: #f4f4f4;
+}
+
+.dark-theme .video-item a {
+    color: #f4f4f4;
+}
+
+.dark-theme button {
+    background-color: #0056b3;
+}
+
+.dark-theme button:hover {
+    background-color: #007BFF;
+}
