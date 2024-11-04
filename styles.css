@@ -56,3 +56,96 @@ img {
     max-width: 100%;
     border-radius: 10px;
 }
+
+.play-button {
+    position: relative;
+    width: 11em; /* Largura do botão */
+    height: 4em; /* Altura do botão */
+    outline: none; /* Remove a borda de foco padrão */
+    background-color: transparent; /* Fundo transparente */
+    border: none; /* Remove a borda */
+    font-size: 13px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: 0.2s; /* Transição suave */
+}
+
+.play-button:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+.play-button:active {
+    transform: scale(0.95); /* Diminui o tamanho do botão ao clicar */
+}
+
+#clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid white; /* Borda do botão */
+    border-radius: 1em; /* Bordas arredondadas */
+    pointer-events: none; /* Ignora eventos de mouse */
+}
+
+.corner {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid; /* Estilo da borda */
+    pointer-events: none; /* Ignora eventos de mouse */
+}
+
+#leftTop {
+    border-width: 2em 2em 0 0; /* Tamanho da borda */
+    border-color: white transparent transparent transparent; /* Cor da borda */
+    top: -2em; /* Posição superior */
+    left: -2em; /* Posição esquerda */
+}
+
+#rightBottom {
+    border-width: 0 0 2em 2em; /* Tamanho da borda */
+    border-color: transparent transparent white transparent; /* Cor da borda */
+    bottom: -2em; /* Posição inferior */
+    right: -2em; /* Posição direita */
+}
+
+#rightTop {
+    border-width: 2em 0 0 2em; /* Tamanho da borda */
+    border-color: white transparent transparent transparent; /* Cor da borda */
+    top: -2em; /* Posição superior */
+    right: -2em; /* Posição direita */
+}
+
+#leftBottom {
+    border-width: 0 2em 2em 0; /* Tamanho da borda */
+    border-color: transparent white transparent transparent; /* Cor da borda */
+    bottom: -2em; /* Posição inferior */
+    left: -2em; /* Posição esquerda */
+}
+
+.arrow {
+    position: absolute; /* Posição absoluta para as setas */
+    width: 0;
+    height: 0;
+    border-left: 0.5em solid transparent; /* Estilo da seta */
+    border-right: 0.5em solid transparent; /* Estilo da seta */
+    pointer-events: none; /* Ignora eventos de mouse */
+}
+
+#rightArrow {
+    border-bottom: 0.5em solid white; /* Cor da seta */
+    right: 1em; /* Posição da seta direita */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta a posição vertical */
+}
+
+#leftArrow {
+    border-top: 0.5em solid white; /* Cor da seta */
+    left: 1em; /* Posição da seta esquerda */
+    bottom: 50%; /* Centraliza verticalmente */
+    transform: translateY(50%); /* Ajusta a posição vertical */
+}
