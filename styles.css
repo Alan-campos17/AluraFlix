@@ -29,17 +29,22 @@ h1 {
 }
 
 .video-list {
+    display: flex; /* Adiciona um layout flexível */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se não houver espaço */
     list-style-type: none;
     padding: 0;
+    justify-content: center; /* Centraliza os itens na linha */
 }
 
 .video-list li {
-    margin: 20px 0;
+    margin: 10px; /* Ajusta a margem para dar espaçamento entre os itens */
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 10px;
     background-color: #fff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 30%; /* Faz com que os itens ocupem 30% do espaço disponível */
+    max-width: 200px; /* Limita a largura máxima dos itens */
 }
 
 .video-list li:hover {
