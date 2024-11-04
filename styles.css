@@ -57,19 +57,27 @@ img {
     border-radius: 10px;
 }
 
+.video-list {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding */
+}
+
+.video-list li {
+    margin-bottom: 20px; /* Espaçamento entre os itens da lista */
+}
+
 .play-button {
     position: relative;
-    width: 11em; /* Largura do botão */
-    height: 4em; /* Altura do botão */
-    outline: none; /* Remove a borda de foco padrão */
+    width: 120px; /* Largura do botão */
+    height: 40px; /* Altura do botão */
     background-color: transparent; /* Fundo transparente */
     border: none; /* Remove a borda */
-    font-size: 13px; /* Tamanho da fonte */
+    font-size: 16px; /* Tamanho da fonte */
     font-weight: bold; /* Negrito */
     color: white; /* Cor do texto */
     text-align: center; /* Centraliza o texto */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    transition: 0.2s; /* Transição suave */
+    transition: transform 0.2s; /* Transição suave */
 }
 
 .play-button:hover {
@@ -133,7 +141,6 @@ img {
     height: 0;
     border-left: 0.5em solid transparent; /* Estilo da seta */
     border-right: 0.5em solid transparent; /* Estilo da seta */
-    pointer-events: none; /* Ignora eventos de mouse */
 }
 
 #rightArrow {
