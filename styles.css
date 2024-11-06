@@ -131,7 +131,7 @@ nav a:hover {
         transition: none;
     }
 
-    /* Estilos para os botões */
+
 button, 
 .video-list li a {
     display: inline-block;
@@ -153,31 +153,31 @@ button:hover,
     transform: scale(1.05);
 }
 
-/* Estilo específico para botão de assistir */
+
 .watch-btn {
     background-color: var(--primary-color);
     color: white;
 }
 
-/* Estilo para botão de informações */
+
 .info-btn {
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
 }
 
-/* Estilo para os botões quando pressionados */
+
 button:active,
 .video-list li a:active {
     transform: scale(0.95);
 }
 
-/* Estilo para botões desabilitados */
+
 button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
 }
 
-/* Grupo de botões */
+
 .button-group {
     display: flex;
     gap: 10px;
