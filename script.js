@@ -23,3 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+function showInfo() {
+    window.location.href = 'informacao.html';
+    // ou para nova aba:
+    // window.open('informacao.html', '_blank');
+    }
