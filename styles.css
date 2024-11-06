@@ -130,3 +130,57 @@ nav a:hover {
     position: relative;
         transition: none;
     }
+
+    /* Estilos para os botões */
+button, 
+.video-list li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.video-list li a:hover {
+    background-color: #ff0a16;
+    transform: scale(1.05);
+}
+
+/* Estilo específico para botão de assistir */
+.watch-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Estilo para botão de informações */
+.info-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Estilo para os botões quando pressionados */
+button:active,
+.video-list li a:active {
+    transform: scale(0.95);
+}
+
+/* Estilo para botões desabilitados */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Grupo de botões */
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px 0;
+}
