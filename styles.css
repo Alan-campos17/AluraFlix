@@ -305,3 +305,75 @@ footer {
 .watch-btn:hover {
     background-color: var(--secondary-color);
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.jogos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.jogo-card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.jogo-card:hover {
+    transform: translateY(-5px);
+}
+
+.jogo-imagem {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.jogo-titulo {
+    color: #2A7AE4;
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.jogo-info {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+.voltar-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #2A7AE4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.voltar-btn:hover {
+    background-color: #1756a9;
+}
+
+@media (max-width: 768px) {
+    .jogos-grid {
+        grid-template-columns: 1fr;
+    }
+}
