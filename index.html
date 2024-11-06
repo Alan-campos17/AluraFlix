@@ -3,42 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogos Clássicos</title>
+    <title>PS2 Classics</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Jogos Clássicos de Videogame PS2</h1>
+    <header>
+        <nav>
+            <div class="logo">PS2 CLASSICS</div>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#categories">Categorias</a></li>
+                <li><a href="#search">Buscar</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="video-destaque">
-            <h2>Vídeo Destaque</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/FztaIIOazaM" allowfullscreen></iframe>
-        </div>
+    <main>
+        <section class="hero">
+            <div class="featured-content">
+                <h1>Jogos Clássicos do PS2</h1>
+                <p>Reviva os melhores momentos dos jogos que marcaram época</p>
+                <div class="buttons">
+                    <button class="play-btn">▶ Assistir</button>
+                    <button class="info-btn">ℹ Mais Informações</button>
+                </div>
+            </div>
+            <div class="featured-video">
+                <iframe src="https://www.youtube.com/embed/FztaIIOazaM" allowfullscreen></iframe>
+            </div>
+        </section>
 
-        <h2>Lista de Vídeos</h2>
-        <ul class="video-list">
-            <li>
-                <h3>Resident Evil 4</h3>
-                <a href="https://www.youtube.com/watch?v=d6YSwVWqWWY" target="_blank">Assistir</a>
-                <img src="https://img.youtube.com/vi/d6YSwVWqWWY/hqdefault.jpg" alt="Resident Evil 4 PS2">
-            </li>
-            <li>
-                <h3>Ghost Rider Trailer</h3>
-                <a href="https://www.youtube.com/watch?v=rgR8iDqW_HU" target="_blank">Assistir</a>
-                <img src="https://img.youtube.com/vi/rgR8iDqW_HU/hqdefault.jpg" alt="Ghost Rider PS2">
-            </li>
-            <li>
-                <h3>BLACK Trailer</h3>
-                <a href="https://www.youtube.com/watch?v=G_FeNewtM_I" target="_blank">Assistir</a>
-                <img src="https://img.youtube.com/vi/G_FeNewtM_I/hqdefault.jpg" alt="BLACK PS2">
-            </li>
-            <li>
-                <h3>Need for Speed Underground Trailer</h3>
-                <a href="https://www.youtube.com/watch?v=M4hwG0NujpI" target="_blank">Assistir</a>
-                <img src="https://img.youtube.com/vi/K5Uo5OPdo9w/hqdefault.jpg" alt="Need for Speed Underground PS2">
-            </li>
-            <li>
-                <h3>Midnight Club 3 Trailer</h3>
-                <a href="https://www.youtube.com/watch?v=nWb9XZxuaqE" target="_blank">Assistir</a>
-                <img src="https://img.youtube.com/vi/Pb5r8V99v_w/hqdefault.jpg" alt="Midnight Club">
-                </li>
+        <section class="categories">
+            <div class="category">
+                <h2>Ação e Aventura</h2>
+                <div class="video-row">
+                    <div class="video-card">
+                        <img src="https://img.youtube.com/vi/d6YSwVWqWWY/hqdefault.jpg" alt="Resident Evil 4">
+                        <div class="video-info">
+                            <h3>Resident Evil 4</h3>
+                            <a href="https://www.youtube.com/watch?v=d6YSwVWqWWY" class="watch-btn">Assistir</a>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <img src="https://img.youtube.com/vi/rgR8iDqW_HU/hqdefault.jpg" alt="Ghost Rider">
+                        <div class="video-info">
+                            <h3>Ghost Rider</h3>
+                            <a href="https://www.youtube.com/watch?v=rgR8iDqW_HU" class="watch-btn">Assistir</a>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <img src="https://img.youtube.com/vi/G_FeNewtM_I/hqdefault.jpg" alt="BLACK">
+                        <div class="video-info">
+                            <h3>BLACK</h3>
+                            <a href="https://www.youtube.com/watch?v=G_FeNewtM_I" class="watch-btn">Assistir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h2>Corrida</h2>
+                <div class="video-row">
+                    <div class="video-card">
+                        <img src="https://img.youtube.com/vi/M4hwG0NujpI/hqdefault.jpg" alt="Need for Speed Underground">
+                        <div class="video-info">
+                            <h3>Need for Speed Underground</h3>
+                            <a href="https://www.youtube.com/watch?v=M4hwG0NujpI" class="watch-btn">Assistir</a>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <img src="https://img.youtube.com/vi/nWb9XZxuaqE/hqdefault.jpg" alt="Midnight Club 3">
+                        <div class="video-info">
+                            <h3>Midnight Club 3</h3>
+                            <a href="https://www.youtube.com/watch?v=nWb9XZxuaqE" class="watch-btn">Assistir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 PS2 Classics - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
